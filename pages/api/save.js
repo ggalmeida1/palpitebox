@@ -4,6 +4,11 @@ import moment from 'moment'
 
 const doc = new GoogleSpreadsheet('1SAAMcB336n6yW6GGe8eUHvgQ7OZcvx9gXI_n0oZVv_k')
 
+const genCupom = () => {
+    const code = parseInt(moment().format('YYMMDDHHmmssSSS')).toString(16).toUpperCase()
+    return code.substr(0, 4) + '-' + code.substr(4, 4) + '-' + code.substr(8, 4)
+}
+
 export default async(req, res) => {
 
     try {
@@ -23,7 +28,7 @@ export default async(req, res) => {
         let Promo = ''
         if (mostrarPromocaoCell.value === 'VERDADEIRO') {
             //To-do: Generate Coupon
-            Cupom = 'temporario'
+            Cupom = genCupom ()
             Promo = textoCell.value
         }
 
