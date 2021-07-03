@@ -1,10 +1,10 @@
-# TulioFaria.dev (resume)
+# PalpiteBox
 
-[![HitCount](https://hits.dwyl.com/tuliofaria/tuliofaria/tuliofariadev.svg)](https://hits.dwyl.com/tuliofaria/tuliofaria/tuliofariadev)
+[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fhttps%2F%2Fgithub.com%2Fggalmeida1%2Fpalpitebox%2Fgithub.com%2Fgjbae1212%2Fhit-counter&count_bg=%231A97E3&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)]
 
-Este projeto é o código-fonte do curriculo online de Tulio Faria, disponível em: https://tuliofaria.dev
+Este projeto permite que os clientes de um determinado Restaurante ou negócio local palpitem sobre o atendimento, produto, etc.
 
-![Preview](https://github.com/tuliofaria/tuliofaria.dev/blob/master/print.png?raw=true)
+Em troca, o cliente recebe um cupom (Desconto, condição, especial)
 
 ## Início
 
@@ -21,7 +21,7 @@ npm run dev
 
 ## Layout:
 
-Criamos o layout utilizando o Figma. Você pode encontrar o arquivo [aqui](https://www.figma.com/file/9bUM0ZS9hzXS9eh9VMXEbc/resume?node-id=0%3A1).
+Criamos o layout utilizando o Figma. Você pode encontrar o arquivo [aqui](https://www.figma.com/file/HxvAYhS6l7UDI49u8uLdaC/palpite-box?node-id=0%3A1).
 
 ## Colocando em produção:
 
@@ -37,7 +37,7 @@ rapidly building custom designs.
 
 ## Author:
 
-* **Tulio Faria** - [LinkedIn](https://www.linkedin.com/in/tuliofaria/)
+* **Gabriel Almeida** - [LinkedIn](https://www.linkedin.com/in/ggalmeida/)
 
 
 ## Licença
