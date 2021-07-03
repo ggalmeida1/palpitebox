@@ -16,7 +16,7 @@ export default async(req, res) => {
         await doc.loadInfo()
         const sheet = doc.sheetsByIndex[1]
         const data = JSON.parse(req.body)
-
+        //console.log(data)
 
         const sheetConfig = doc.sheetsByIndex[2]
         await sheetConfig.loadCells('A3:B3')
@@ -27,22 +27,24 @@ export default async(req, res) => {
         let Cupom = ''
         let Promo = ''
         if (mostrarPromocaoCell.value === 'VERDADEIRO') {
-            //To-do: Generate Coupon
             Cupom = genCupom ()
             Promo = textoCell.value
         }
 
-        //Nome Email WhatsApp Cupom Promo
         await sheet.addRow({
             Nome: data.Nome,
             Email: data.Email,
-            Whatsapp: data.Whatsapp,
-            Nota: 5,
+            WhatsApp: data.WhatsApp,
+            Nota: parseInt(data.Nota),
             'Data Preenchimento': moment().format('DD/MM/YYYY HH:mm'),
             Cupom,
             Promo
         })
-        res.end(req.body)
+        res.end(JSON.stringify({
+            showCoupon: Cupom !== '',
+            Cupom,
+            Promo
+        }))
 
     }catch(err) {
         console.log(err)
