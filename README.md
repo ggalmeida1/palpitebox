@@ -25,7 +25,7 @@ Criamos o layout utilizando o Figma. Você pode encontrar o arquivo [aqui](https
 
 ## Colocando em produção:
 
-Este projeto pode ser colocado em produção utilizando o Vercel (sem configurações extras).
+Este projeto pode ser colocado em produção utilizando o Vercel.
 
 ## Construído com:
 
